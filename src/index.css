@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-slate-100 font-sans text-slate-900 antialiased; }
+  :focus-visible { outline: 3px solid #5eead4; outline-offset: 2px; }
+}
+@media print { @page { margin: 6mm; } body { background: #fff; } }
